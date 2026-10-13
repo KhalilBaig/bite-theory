@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frame scroll test</title>
+<style>
+  html, body { margin: 0; background: #0F0906; color: #FFF4E0; font-family: system-ui, sans-serif; }
+  #track { height: 500vh; position: relative; }
+  #stage { position: sticky; top: 0; height: 100vh; }
+  canvas { width: 100%; height: 100%; display: block; }
+  #dbg { position: fixed; left: 12px; top: 12px; background: rgba(0,0,0,.75); color: #F6A525; padding: 10px 14px;
+         font: 14px/1.5 ui-monospace, Consolas, monospace; z-index: 5; border-radius: 6px; white-space: pre; }
+  #nav { position: fixed; right: 12px; top: 12px; z-index: 5; display: flex; gap: 8px; }
+  #nav a { background: #F6A525; color: #000; padding: 8px 14px; text-decoration: none; font-weight: 700; border-radius: 6px; }
+</style>
+</head>
+<body>
+<div id="dbg">starting...</div>
+<div id="nav"><a href="#burger" onclick="setTimeout(()=>location.reload())">burger</a><a href="#pizza" onclick="setTimeout(()=>location.reload())">pizza</a><a href="#rolls" onclick="setTimeout(()=>location.reload())">rolls</a></div>
+<div id="track"><div id="stage"><canvas id="c"></canvas></div></div>
+
+<script>
+(function () {
+  var name = (location.hash || '#burger').slice(1);
+  var dbg = document.getElementById('dbg');
+  var canvas = document.getElementById('c');
+  var ctx = canvas.getContext('2d');
+  var track = document.getElementById('track');
+  var frames = [];
+  var errors = 0, loaded = 0, total = 0;
+
+  function pad(n) { return String(n).padStart(4, '0'); }
+  function url(i) { return '/frames/' + name + '/' + pad(i) + '.webp'; }
+
+  function resize() {
+    var dpr = window.devicePixelRatio || 1;
+    canvas.width = Math.round(canvas.clientWidth * dpr);
+    canvas.height = Math.round(canvas.clientHeight * dpr);
+    lastDrawn = -1;
+  }
+  window.addEventListener('resize', resize);
+
+  function loadOne(i) {
+    return new Promise(function (res) {
+      var img = new Image();
+      img.onload = function () { res(img); };
+      img.onerror = function () { res(null); };
+      img.src = url(i);
+    });
+  }
+
+  // find real frame count: load in batches until one is missing
+  async function loadAll() {
+    var i = 1, done = false;
+    while (!done && i < 1000) {
+      var batch = [];
+      for (var k = 0; k < 16; k++) batch.push(loadOne(i + k));
+      var res = await Promise.all(batch);
+      for (var k2 = 0; k2 < res.length; k2++) {
+        if (res[k2]) { frames.push(res[k2]); loaded++; }
+        else { done = true; break; }
+      }
+      i += 16;
+      total = frames.length;
+      update();
+    }
+    if (frames.length === 0) errors = 1;
+    update();
+  }
+
+  var lastDrawn = -1, progress = 0, current = 0;
+  function draw(idx) {
+    var img = frames[idx];
+    if (!img) return;
+    var cw = canvas.width, ch = canvas.height;
+    var s = Math.max(cw / img.width, ch / img.height);
+    var w = img.width * s, h = img.height * s;
+    ctx.fillStyle = '#0F0906';
+    ctx.fillRect(0, 0, cw, ch);
+    ctx.drawImage(img, (cw - w) / 2, (ch - h) / 2, w, h);
+  }
+  function update() {
+    var r = track.getBoundingClientRect();
+    progress = Math.min(1, Math.max(0, -r.top / (r.height - window.innerHeight)));
+    current = frames.length ? Math.round(progress * (frames.length - 1)) : 0;
+    if (current !== lastDrawn && frames.length) { draw(current); lastDrawn = current; }
+    dbg.textContent =
+      'sequence : ' + name + '\n' +
+      'frames   : ' + frames.length + (errors ? '  (NONE FOUND - check path ' + url(1) + ')' : '') + '\n' +
+      'progress : ' + progress.toFixed(3) + '\n' +
+      'frame    : ' + current;
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  resize();
+  loadAll();
+})();
+</script>
+</body>
+</html>

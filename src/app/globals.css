@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #F6A525;
+    --color-primary-hover: #E0921A;
+    --color-on-primary: #000000;
+    --color-secondary: #0D6EFD;
+    --color-accent: #F6A525;
+    --color-light-bg: #FFFFFF;
+    --color-light-text: #000000;
+    --color-link: #990100;
+    --color-dark-bg: #0F0906;
+    --color-dark-surface: #1A110C;
+    --color-dark-text: #FFF4E0;
+    --color-dark-muted: #B8A48C;
+    --font-heading: 'ChunkFiveEx', 'Alfa Slab One', 'Rockwell', 'Impact', serif;
+    --font-body: 'Montserrat', system-ui, -apple-system, sans-serif;
+    --font-accent: 'Raleway', sans-serif;
+    --font-size-hero: clamp(56px, 11vw, 180px);
+    --font-size-h1: clamp(34px, 6vw, 88px);
+    --font-size-h2: clamp(24px, 3.5vw, 48px);
+    --font-size-body: 15px;
+    --border-radius-button: 0px;
+    --border-radius-input: 0px;
+    --spacing-section: clamp(80px, 12vw, 200px);
+  }
+
+  body {
+    background-color: var(--color-dark-bg);
+    color: var(--color-dark-text);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    overflow-x: clip; /* Fix: overflow-x: clip prevents horizontal scrollbars without breaking position: sticky */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+    text-transform: uppercase;
+  }
+}
+
+/* Custom modern thin scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0F0906;
+}
+::-webkit-scrollbar-thumb {
+  background: #F6A525;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E0921A;
+}
+
+/* Primary Button Styling according to branding.json */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary) !important; /* Dark text on primary button, never white on orange */
+  border-radius: 0px !important;
+  font-family: var(--font-body);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(246, 165, 37, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(246, 165, 37, 0.45);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: currentColor;
+  border: 2px solid currentColor;
+  border-radius: 0px !important;
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(246, 165, 37, 0.1);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* Orange Radial Glow Utilities */
+.glow-orange {
+  background: radial-gradient(circle, rgba(246, 165, 37, 0.15) 0%, transparent 70%);
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}

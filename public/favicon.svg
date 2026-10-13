@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Bite mask for top bun -->
+    <mask id="faviconBiteMask">
+      <rect width="128" height="128" fill="#ffffff" />
+      <circle cx="94" cy="30" r="16" fill="#000000" />
+      <circle cx="106" cy="44" r="13" fill="#000000" />
+    </mask>
+
+    <linearGradient id="favBunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6A525"/>
+      <stop offset="100%" stop-color="#E0921A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Background Badge -->
+  <rect width="128" height="128" rx="28" fill="#0F0906"/>
+  <!-- Orange Accent Ring -->
+  <circle cx="64" cy="64" r="56" fill="none" stroke="#F6A525" stroke-width="4.5"/>
+
+  <!-- Stacked Burger Icon -->
+  <g transform="translate(4, 4)">
+    <!-- Top Bun with Bite Mask -->
+    <path d="M 28 54 C 28 29 44 20 60 20 C 76 20 92 29 92 54 Z" fill="url(#favBunGrad)" mask="url(#faviconBiteMask)"/>
+
+    <!-- Sesame Seeds -->
+    <ellipse cx="46" cy="33" rx="2.8" ry="1.5" fill="#FFF4E0" transform="rotate(-15 46 33)"/>
+    <ellipse cx="60" cy="28" rx="2.8" ry="1.5" fill="#FFF4E0"/>
+    <ellipse cx="72" cy="36" rx="2.5" ry="1.4" fill="#FFF4E0" transform="rotate(20 72 36)"/>
+
+    <!-- Wavy Lettuce -->
+    <path d="M 26 57 C 32 62 37 57 43 62 C 49 57 55 62 61 57 C 67 62 73 57 79 62 C 85 57 91 62 96 57 L 96 61 C 91 66 85 61 79 66 C 73 61 67 66 61 61 C 55 66 49 61 43 66 C 37 61 32 66 26 61 Z" fill="#FFF4E0"/>
+
+    <!-- Seared Patty -->
+    <rect x="27" y="65" width="68" height="10" rx="5" fill="#F6A525" opacity="0.95"/>
+
+    <!-- Cheese Melt -->
+    <path d="M 28 76 L 94 76 C 94 76 89 88 82 88 C 76 88 74 81 68 81 C 63 81 60 92 53 92 C 47 92 44 84 38 84 C 32 84 29 89 28 76 Z" fill="#F6A525"/>
+
+    <!-- Bottom Bun -->
+    <path d="M 30 93 L 90 93 C 90 93 90 105 80 108 C 70 110 50 110 40 108 C 30 105 30 93 30 93 Z" fill="#FFF4E0"/>
+  </g>
+</svg>

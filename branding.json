@@ -1,0 +1,285 @@
+{
+  "data": {
+    "branding": {
+      "colorScheme": "light",
+      "fonts": [
+        {
+          "family": "Montserrat",
+          "role": "body"
+        },
+        {
+          "family": "ChunkFiveEx",
+          "role": "heading",
+          "fallback": "Alfa Slab One, Rockwell, serif"
+        },
+        {
+          "family": "Raleway",
+          "role": "accent"
+        }
+      ],
+      "colors": {
+        "primary": "#F6A525",
+        "secondary": "#0D6EFD",
+        "accent": "#F6A525",
+        "background": "#FFFFFF",
+        "textPrimary": "#000000",
+        "link": "#990100",
+        "primaryHover": "#E0921A",
+        "onPrimary": "#000000",
+        "dark": {
+          "background": "#0F0906",
+          "surface": "#1A110C",
+          "text": "#FFF4E0",
+          "mutedText": "#B8A48C"
+        }
+      },
+      "typography": {
+        "fontFamilies": {
+          "primary": "Montserrat",
+          "heading": "ChunkFiveEx"
+        },
+        "fontStacks": {
+          "heading": [
+            "ChunkFiveEx",
+            "Alfa Slab One",
+            "Rockwell",
+            "serif"
+          ],
+          "body": [
+            "Montserrat",
+            "system-ui",
+            "sans-serif"
+          ],
+          "paragraph": [
+            "Montserrat",
+            "system-ui",
+            "sans-serif"
+          ],
+          "accent": [
+            "Raleway",
+            "sans-serif"
+          ]
+        },
+        "fontSizes": {
+          "hero": "clamp(56px, 11vw, 180px)",
+          "h1": "clamp(34px, 6vw, 88px)",
+          "h2": "clamp(24px, 3.5vw, 48px)",
+          "body": "15px"
+        }
+      },
+      "spacing": {
+        "baseUnit": 4,
+        "borderRadius": "4px",
+        "section": "clamp(80px, 12vw, 200px)"
+      },
+      "components": {
+        "input": {
+          "background": "transparent",
+          "textColor": "currentColor",
+          "borderColor": "currentColor",
+          "borderRadius": "0px",
+          "borderRadiusCorners": {
+            "topLeft": "0px",
+            "topRight": "0px",
+            "bottomRight": "0px",
+            "bottomLeft": "0px"
+          },
+          "shadow": "none"
+        },
+        "buttonPrimary": {
+          "background": "#F6A525",
+          "textColor": "#000000",
+          "borderRadius": "0px",
+          "borderRadiusCorners": {
+            "topLeft": "0px",
+            "topRight": "0px",
+            "bottomRight": "0px",
+            "bottomLeft": "0px"
+          },
+          "shadow": "none"
+        },
+        "buttonSecondary": {
+          "background": "transparent",
+          "textColor": "currentColor",
+          "borderColor": "currentColor",
+          "borderRadius": "0px",
+          "borderRadiusCorners": {
+            "topLeft": "0px",
+            "topRight": "0px",
+            "bottomRight": "0px",
+            "bottomLeft": "0px"
+          },
+          "shadow": "none"
+        },
+        "nav": {
+          "behavior": "hide-on-scroll-down",
+          "cta": "Order Now"
+        }
+      },
+      "images": {
+        "logo": "/images/logo-dark.svg",
+        "favicon": "/images/favicon.svg",
+        "ogImage": null,
+        "logoHref": "#",
+        "logoAlt": "BITE THEORY logo"
+      },
+      "personality": {
+        "tone": "playful",
+        "energy": "high",
+        "targetAudience": "young adults and families"
+      },
+      "designSystem": {
+        "framework": "tailwind",
+        "componentLibrary": ""
+      },
+      "confidence": {
+        "buttons": 0.95,
+        "colors": 0.9,
+        "overall": 0.925
+      },
+      "brandName": "BITE THEORY",
+      "logo": "/images/logo-dark.svg",
+      "tagline": "Fresh. Fast. Fired up.",
+      "sections": {
+        "hero": "dark",
+        "breakdown": "dark",
+        "pizza": "dark",
+        "menu": "light",
+        "cta": "dark"
+      },
+      "motion": {
+        "easing": "power3.out",
+        "scrub": 0.6,
+        "smoothScroll": true
+      },
+      "content": {
+        "orderUrl": "https://wa.me/92XXXXXXXXXX",
+        "hours": "11am to 2am",
+        "city": "Rawalpindi"
+      },
+      "assets": {
+        "burgerFrames": "/images/burger",
+        "pizzaFrames": "/images/pizza"
+      },
+      "logoGeneration": {
+        "generateWithAntigravity": true,
+        "outputs": [
+          "/images/logo.svg",
+          "/images/favicon.svg"
+        ],
+        "style": "bold wordmark, playful and high-energy, modern fast food brand",
+        "colors": [
+          "#F6A525",
+          "#0F0906",
+          "#FFF4E0"
+        ],
+        "notes": "Wordmark 'BITE THEORY' with a small bite-mark or burger/pizza icon. Provide a light-background and a dark-background version. Must stay readable at 32px."
+      }
+    },
+    "metadata": {
+      "author": "BITE THEORY",
+      "msapplication-TileColor": "#0F0906",
+      "theme-color": "#0F0906",
+      "title": "BITE THEORY - Burgers, Rolls and Pizza",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "BITE THEORY serves fresh burgers, rolls and pizza, made to order and served fast.",
+      "language": "en",
+      "favicon": "/images/favicon.svg",
+      "scrapeId": "01a0ed8f-d7d9-744c-80a8-01493b518aad",
+      "sourceURL": "https://butazzopizza.netlify.app/#header",
+      "url": "https://butazzopizza.netlify.app/#header",
+      "statusCode": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "timezone": "America/New_York",
+      "proxyUsed": "basic",
+      "indexId": "bf752367-daed-4e00-a50e-cde94726f960",
+      "creditsUsed": 1,
+      "concurrencyLimited": false
+    }
+  },
+  "scrape_id": "01a0ed8f-d7d9-744c-80a8-01493b518aad",
+  "id": "Y7DIDr7JENhCu6mDs64m2",
+  "startedAt": "2026-09-29T14:27:02.485Z",
+  "endedAt": "2026-09-29T14:27:10.671Z",
+  "endpoint": "scrape",
+  "formState": {
+    "parseFile": null,
+    "parseFileMeta": null,
+    "extractSetupCompleted": false,
+    "urls": [],
+    "extractSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "company_mission": {
+          "type": "string"
+        },
+        "supports_sso": {
+          "type": "boolean"
+        },
+        "is_open_source": {
+          "type": "boolean"
+        },
+        "is_in_yc": {
+          "type": "boolean"
+        }
+      }
+    },
+    "extractPrompt": "Extract the company details, following the schema.",
+    "enableWebSearch": false,
+    "constrainUrls": false,
+    "options": {
+      "onlyMainContent": true,
+      "parsePDF": true,
+      "excludeTags": [],
+      "includeTags": [],
+      "waitFor": "",
+      "timeout": "",
+      "maxAge": "2 days",
+      "ignoreSitemap": false,
+      "crawlEntireDomain": false,
+      "sitemap": "include",
+      "limit": "10",
+      "maxDepth": "",
+      "excludePaths": [],
+      "includePaths": [],
+      "includeSubdomains": false,
+      "search": "",
+      "scrapeContentFromSearchResults": true,
+      "timeBasedSearch": "",
+      "location": "",
+      "includeDomains": [],
+      "excludeDomains": [],
+      "prompt": ""
+    },
+    "formats": [
+      "branding"
+    ],
+    "sources": [
+      "web"
+    ],
+    "categories": [],
+    "indexes": [],
+    "jsonSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "company_name": {
+          "type": "string"
+        },
+        "company_description": {
+          "type": "string"
+        }
+      }
+    },
+    "jsonPrompt": "",
+    "questionPrompt": "",
+    "highlightsQuery": "",
+    "agent": {},
+    "url": "butazzopizza.netlify.app/#header",
+    "endpoint": "scrape"
+  },
+  "status": "success",
+  "version": "HUP3iIUTdQ-ChHG5CAV18",
+  "isPreview": false
+}

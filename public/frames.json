@@ -1,0 +1,20 @@
+{
+  "burger": {
+    "count": 120,
+    "prefix": "/frames/burger/",
+    "digits": 4,
+    "ext": ".webp"
+  },
+  "pizza": {
+    "count": 120,
+    "prefix": "/frames/pizza/",
+    "digits": 4,
+    "ext": ".webp"
+  },
+  "rolls": {
+    "count": 120,
+    "prefix": "/frames/rolls/",
+    "digits": 4,
+    "ext": ".webp"
+  }
+}

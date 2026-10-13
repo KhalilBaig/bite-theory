@@ -1,0 +1,146 @@
+[
+  {
+    "id": "item-1",
+    "filenameKey": "deal 1",
+    "category": "burger",
+    "imagePath": "/menu/burger/deal%201.jpg",
+    "fallbackName": "Deal 1",
+    "isDeal": true
+  },
+  {
+    "id": "item-2",
+    "filenameKey": "deal 2",
+    "category": "burger",
+    "imagePath": "/menu/burger/deal%202.jpg",
+    "fallbackName": "Deal 2",
+    "isDeal": true
+  },
+  {
+    "id": "item-3",
+    "filenameKey": "Double Decker Chicken Paradise",
+    "category": "burger",
+    "imagePath": "/menu/burger/Double%20Decker%20Chicken%20Paradise.jpg",
+    "fallbackName": "Double Decker Chicken Paradise",
+    "isDeal": false
+  },
+  {
+    "id": "item-4",
+    "filenameKey": "Double_smash_cheeseburger",
+    "category": "burger",
+    "imagePath": "/menu/burger/Double_smash_cheeseburger.jpg",
+    "fallbackName": "Double Smash Cheeseburger",
+    "isDeal": false
+  },
+  {
+    "id": "item-5",
+    "filenameKey": "Juicy_BBQ_burger",
+    "category": "burger",
+    "imagePath": "/menu/burger/Juicy_BBQ_burger.jpg",
+    "fallbackName": "Juicy Bbq Burger",
+    "isDeal": false
+  },
+  {
+    "id": "item-6",
+    "filenameKey": "Zinger_burger",
+    "category": "burger",
+    "imagePath": "/menu/burger/Zinger_burger.jpg",
+    "fallbackName": "Zinger Burger",
+    "isDeal": false
+  },
+  {
+    "id": "item-7",
+    "filenameKey": "Chicken_Tikka_Pizza_",
+    "category": "pizza",
+    "imagePath": "/menu/pizza/Chicken_Tikka_Pizza_.jpg",
+    "fallbackName": "Chicken Tikka Pizza",
+    "isDeal": false
+  },
+  {
+    "id": "item-8",
+    "filenameKey": "Fajita_pizza_with_bell_peppers_",
+    "category": "pizza",
+    "imagePath": "/menu/pizza/Fajita_pizza_with_bell_peppers_.jpg",
+    "fallbackName": "Fajita Pizza With Bell Peppers",
+    "isDeal": false
+  },
+  {
+    "id": "item-9",
+    "filenameKey": "Family_deal_pizza",
+    "category": "pizza",
+    "imagePath": "/menu/pizza/Family_deal_pizza.jpg",
+    "fallbackName": "Family Deal Pizza",
+    "isDeal": true
+  },
+  {
+    "id": "item-10",
+    "filenameKey": "Italian_pizza",
+    "category": "pizza",
+    "imagePath": "/menu/pizza/Italian_pizza.jpg",
+    "fallbackName": "Italian Pizza",
+    "isDeal": false
+  },
+  {
+    "id": "item-11",
+    "filenameKey": "Malai_Tikka_Pizza",
+    "category": "pizza",
+    "imagePath": "/menu/pizza/Malai_Tikka_Pizza.jpg",
+    "fallbackName": "Malai Tikka Pizza",
+    "isDeal": false
+  },
+  {
+    "id": "item-12",
+    "filenameKey": "single_deal",
+    "category": "pizza",
+    "imagePath": "/menu/pizza/single_deal.jpg",
+    "fallbackName": "Single Deal",
+    "isDeal": true
+  },
+  {
+    "id": "item-13",
+    "filenameKey": "BBQ_roll_with_onin",
+    "category": "fastfood",
+    "imagePath": "/menu/fastfood/BBQ_roll_with_onin.jpg",
+    "fallbackName": "Bbq Roll With Onin",
+    "isDeal": false
+  },
+  {
+    "id": "item-14",
+    "filenameKey": "Crunchy_chicken_pasta_dish_",
+    "category": "fastfood",
+    "imagePath": "/menu/fastfood/Crunchy_chicken_pasta_dish_.jpg",
+    "fallbackName": "Crunchy Chicken Pasta Dish",
+    "isDeal": false
+  },
+  {
+    "id": "item-15",
+    "filenameKey": "Flaming_wings_",
+    "category": "fastfood",
+    "imagePath": "/menu/fastfood/Flaming_wings_.jpg",
+    "fallbackName": "Flaming Wings",
+    "isDeal": false
+  },
+  {
+    "id": "item-16",
+    "filenameKey": "Fried_chicken_nuggets",
+    "category": "fastfood",
+    "imagePath": "/menu/fastfood/Fried_chicken_nuggets.jpg",
+    "fallbackName": "Fried Chicken Nuggets",
+    "isDeal": false
+  },
+  {
+    "id": "item-17",
+    "filenameKey": "Malai_Tikka_cheese_roll_",
+    "category": "fastfood",
+    "imagePath": "/menu/fastfood/Malai_Tikka_cheese_roll_.jpg",
+    "fallbackName": "Malai Tikka Cheese Roll",
+    "isDeal": false
+  },
+  {
+    "id": "item-18",
+    "filenameKey": "Malai_Tikka_Grilled_Sandwich",
+    "category": "fastfood",
+    "imagePath": "/menu/fastfood/Malai_Tikka_Grilled_Sandwich.jpg",
+    "fallbackName": "Malai Tikka Grilled Sandwich",
+    "isDeal": false
+  }
+]
